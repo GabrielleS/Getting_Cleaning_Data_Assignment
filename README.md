@@ -4,7 +4,7 @@ The script is commented, but it basically pulls in the zip file, unzips it, merg
 
 
 Description of variables:
-# Getting_Cleaning_Data_Assignment
+Getting_Cleaning_Data_Assignment
 
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
