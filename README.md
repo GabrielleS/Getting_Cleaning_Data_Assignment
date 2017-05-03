@@ -1,3 +1,9 @@
+
+How the script works:
+The script is commented, but it basically pulls in the zip file, unzips it, merges the test and the training data. From here the columns are then named as per the data file that lists the names of the columns. It is in this way that I then looked for matches to keep only mean and standard deviation columns (later only mean and then separate dataframes with each activity).
+
+
+Description of variables:
 # Getting_Cleaning_Data_Assignment
 
 ==================================================================
