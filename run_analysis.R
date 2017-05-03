@@ -1,5 +1,5 @@
 # Set working directory
-# This must be put as your personal working directory where the file is saved.
+# you must set this to the same wd as you have saved the zip file.
 
 # Download & unzip zip file from Getting Clean Data Assignment
 download.file(url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", 
@@ -31,9 +31,6 @@ mean_sd_df$ActivityName = ActivityNamesLookup$V2[match(mean_sd_df$ActivityName, 
 # From the data set in step 4, creates a second, 
 # independent tidy data set with the average of each variable for each activity and each subject.
 mean_df = cbind(ActivityName = mean_sd_df$ActivityName, mean_sd_df[, grep( c("mean"), colnames(mean_sd_df))])
-subsetDfs = function(name){
-  df = subset(mean_df, mean_df$ActivityName == name)
-}
-mean_df = lapply(ActivityNamesLookup$V2, subsetDfs)
-names(mean_df) = ActivityNamesLookup$V2
+mean_df = aggregate(mean_df, by = list(mean_df$ActivityName), FUN= mean)
 mean_df
+
