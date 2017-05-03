@@ -1,5 +1,5 @@
 # Set working directory
-setwd("/Users/gabrielleslavik/Desktop")
+# This must be put as your personal working directory where the file is saved.
 
 # Download & unzip zip file from Getting Clean Data Assignment
 download.file(url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", 
