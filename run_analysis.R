@@ -36,3 +36,4 @@ subsetDfs = function(name){
 }
 mean_df = lapply(ActivityNamesLookup$V2, subsetDfs)
 names(mean_df) = ActivityNamesLookup$V2
+mean_df
